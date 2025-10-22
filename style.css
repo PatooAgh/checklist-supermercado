@@ -1,12 +1,34 @@
-body {
+
+    body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: #f4f7f6;
+    
+    /* --- INICIO: FONDO ESTILIZADO --- */
+
+    /* 1. Reemplaza 'fondo.jpg' si tu imagen se llama diferente */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('fondo.jpg');
+
+    /* 2. Hace que la imagen cubra toda la pantalla */
+    background-size: cover;
+
+    /* 3. Centra la imagen */
+    background-position: center;
+
+    /* 4. Evita que la imagen se repita si es pequeña */
+    background-repeat: no-repeat;
+
+    /* 5. ¡Este es el truco! Fija la imagen para que la lista
+       se deslice "por encima" de ella. */
+    background-attachment: fixed;
+
+    /* --- FIN: FONDO ESTILIZADO --- */
+
     margin: 0;
     padding: 20px;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Cambiado a flex-start para mejor vista en móvil */
+    align-items: flex-start;
     min-height: 100vh;
+
 }
 
 .container {
